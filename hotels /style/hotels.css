@@ -1,0 +1,398 @@
+@import "/Users/apple/Desktop/sedona/style/main.css";
+
+.hotels_item a {
+  color: #766357 !important;
+}
+
+.main-header {
+  background-image: url("/Users/apple/Desktop/sedona/media/filter__hotel_background.jpg");
+  background-size: cover;
+}
+
+.filter_block {
+  padding: 10px 40px;
+}
+.filter_block li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.filter__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-part__filter {
+  display: flex;
+}
+
+/* SLIDER */
+
+.right-part__filter_slider {
+  margin-right: 30px;
+  font-family: PTSans-bold;
+}
+
+.price_label {
+  position: relative;
+}
+
+.price_label:first-child::after {
+  content: "";
+  display: block;
+
+  width: 2px;
+  height: 22px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+}
+.right-part__filter_slider h3 {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: PTSans-bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.custon__input {
+  padding: 10px 40px;
+  border: 2px solid #fff;
+}
+
+.custon__input input {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: PTSans-regullar;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+}
+
+.show_btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: PTSans-regullar;
+  margin: 23px 30% 23px 30%;
+  cursor: pointer;
+}
+
+.show_btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.second_column {
+  position: relative;
+  left: 60px;
+}
+
+/* checkbox */
+
+.left-part__filter li {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: PTSans-bold;
+  color: #fff;
+}
+
+.left-part__filter li label {
+  font-family: PTSans-regullar;
+  margin-left: 35px;
+}
+
+.check__box {
+  position: absolute;
+
+  appearance: none;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url("/Users/apple/Desktop/sedona/media/checkbox-off.png");
+  fill: #fff;
+  background-size: cover;
+  cursor: pointer;
+  left: 120px;
+}
+
+.checkbox__2 {
+  position: absolute;
+
+  width: 1em;
+  height: 1em;
+  background-image: url("/Users/apple/Desktop/sedona/media/checkbox-off.png");
+  background-size: cover;
+  cursor: pointer;
+  left: 40px;
+}
+
+.check__box:checked + .checkbox {
+  background-image: url("/Users/apple/Desktop/sedona/media/checkbox-on.png");
+  opacity: 1;
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+
+  background-color: transparent !important;
+}
+
+.check__box:disabled + .checkbox {
+  opacity: 0.5;
+}
+
+/* main */
+
+main {
+  overflow: hidden;
+}
+
+.filter__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-info__list {
+  display: flex;
+  margin-left: 20px;
+}
+
+.filter-info__list li {
+  padding-right: 50px;
+  margin-top: 21px;
+  list-style: none;
+  font-family: PTSans-regullar;
+  font-size: 13px;
+  line-height: 21px;
+  color: #d9d9d9;
+}
+
+.item {
+  border-bottom: dotted !important ;
+  transition: all ease 0.2s;
+}
+
+.filter-info__list .item:focus,
+.filter-info__list .item:hover,
+.filter-info__list .item:active {
+  color: #a8c9de;
+  cursor: pointer;
+  border: none !important;
+}
+
+#sort_text {
+  color: #000;
+}
+
+.filter-info__list .text {
+  font-family: PTSans-bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  position: relative;
+  bottom: 17px;
+}
+
+.filter__arrows {
+  margin: 40px 70px 0 0;
+}
+
+.filter__arrows img {
+  padding-left: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.filter__arrows img:hover {
+  opacity: 1;
+}
+
+.filter__info::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 1px;
+  background-color: #e5e5e5;
+
+  top: 400px;
+}
+
+/* hotels */
+
+.hotel__1 {
+  margin-top: 0;
+}
+
+.hotel__1,
+.hotel__2 {
+  margin-bottom: 61px;
+}
+
+.hotels_block {
+  padding: 5px 55px 30px 55px;
+}
+
+.hotel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars-list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.stars-list li {
+  list-style: none;
+  margin: 0 2.5px;
+  cursor: pointer;
+}
+.hotel-info {
+  display: flex;
+}
+
+.image img {
+  height: 95px;
+  width: 140px;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.rating {
+  padding: 8px 14px;
+  width: 110px;
+  height: 21px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.rating p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: PTSans-regullar;
+  color: #000;
+}
+
+.price {
+  display: flex;
+  justify-content: start;
+}
+
+.price p {
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: PTSans-regullar;
+  text-transform: uppercase;
+  margin: 6px 0;
+}
+
+/* /d */
+
+.content-hotel {
+  margin-top: 15px;
+}
+
+.content-hotel h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-family: PTSans-bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+.more_buttons {
+  padding: 0;
+  margin: 0;
+}
+
+.more_buttons a {
+  margin-right: 8px;
+  padding: 9px 18px;
+  background-color: #81b3d2;
+  color: #fff;
+  font-family: PTSans-bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+.book_button_hotel {
+  border: none;
+  background-color: #766357;
+  padding: 8px 17px;
+  text-align: center;
+  font-family: PTSans-bold;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+/* preudo_line */
+
+.hotel__1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: 40px;
+  top: 540px;
+  margin: 50px 0;
+}
+
+.hotel__3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: 40px;
+  top: 720px;
+  margin: 50px 0;
+}
+
+.hotel__3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: 40px;
+  top: 900px;
+  margin: 50px 0;
+}
+/* footer */
+
+.main-footer {
+  margin-top: 36px;
+}

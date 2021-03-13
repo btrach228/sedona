@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/hotels.css" />
+    <link rel="stylesheet" href="./style/nouislider.min.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="main-header">
+        <section class="navigation">
+          <nav class="head-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="../index.html"> ИНФОРМАЦИЯ</a></li>
+              <li class="nav-item"><a href="#"> ФОТО И ВИДЕО</a></li>
+              <li class="nav-item">
+                <a href="../index.html">
+                  <img
+                    class="header-img"
+                    src="../media/main-logo.png"
+                    alt="main-logo-image"
+                /></a>
+              </li>
+              <li class="nav-item"><a href="#"> КАРТА ШТАТА </a></li>
+              <li class="nav-item hotels_item"><a href="#"> ГОСТИНИЦЫ</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="filter_block">
+          <form action="" method="GET">
+            <div class="filter__content">
+              <div class="left-part__filter">
+                <div class="first_column">
+                  <ul class="list__1">
+                    <li class="head_list">ИНФРАСТРУКТУРА:</li>
+                    <li>
+                      <label class="index_label">
+                        <input class="check__box" type="checkbox" checked />
+                        <span class="checkbox"> </span>
+
+                        БАССЕЙН
+                      </label>
+                    </li>
+                    <li>
+                      <label class="index_label">
+                        <input class="check__box" type="checkbox" />
+                        <span class="checkbox"> </span>
+
+                        ПАРКОВКА
+                      </label>
+                    </li>
+                    <li>
+                      <label class="index_label">
+                        <input
+                          class="check__box"
+                          type="checkbox"
+                          disabled
+                          checked
+                        />
+                        <span class="checkbox"></span>
+
+                        Wi-Fi
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="second_column">
+                  <ul class="list__2">
+                    <li class="head_list">Тип жилья:</li>
+                    <li>
+                      <label class="index_label">
+                        <input class="check__box" type="checkbox" />
+                        <span class="checkbox checkbox__2"></span>
+
+                        ГостиницА
+                      </label>
+                    </li>
+                    <li>
+                      <label class="index_label">
+                        <input class="check__box" type="checkbox" />
+                        <span class="checkbox checkbox__2"></span>
+
+                        МОТЕЛЬ
+                      </label>
+                    </li>
+                    <li>
+                      <label class="index_label">
+                        <input class="check__box" type="checkbox" />
+                        <span class="checkbox checkbox__2"></span>
+
+                        АПАРТАМЕНТЫ
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="right-part__filter_slider">
+                <h3>Стоимость в сутки (Р):</h3>
+                <form action="" method="GET">
+                  <div class="custon__input">
+                    <label class="price_label">
+                      <input
+                        type="number"
+                        min="0"
+                        placeholder="OT 0"
+                        id="inp__1" />
+
+                      <input
+                        id="inp__2"
+                        type="number"
+                        class="input2_filter-price"
+                        placeholder=" дO 5000"
+                        max="5000"
+                    /></label>
+                  </div>
+                  <div class="range-slider" id="range_slider"></div>
+                </form>
+                <button class="show_btn" type="submit">показать</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </header>
+
+      <main class="main-content">
+        <div class="filter__info">
+          <ul class="filter-info__list">
+            <li class="text"><h2>Найдено: 3</h2></li>
+            <li class="sort"><h3 id="sort_text">СОРТИРОВКА:</h3></li>
+            <li><p class="item">ПО ЦЕНЕ</p></li>
+            <li><p class="item">ПО ТИПУ</p></li>
+            <li><p class="item">ПО РЕЙТИНГУ</p></li>
+          </ul>
+
+          <div class="filter__arrows">
+            <img
+              src="../media/icon-down-dir.png"
+              alt="arrow_down"
+              class="arrow"
+            />
+            <img src="../media/icon-up-dir.jpg" alt="arrow_up" class="arrow" />
+          </div>
+        </div>
+
+        <div class="hotels_block">
+          <!-- - -->
+          <div class="hotel hotel__1">
+            <div class="hotel-info">
+              <div class="image">
+                <img src="../media/hotel__1.png" alt="" />
+              </div>
+
+              <div class="content-hotel">
+                <h2>Amara Resort & Spa</h2>
+
+                <div class="price">
+                  <p>Гостиница</p>
+                  <p>ОТ 4000 Р.</p>
+                </div>
+                <div class="more_buttons">
+                  <a href="#" class="button-more__info">ПОДРОБНЕЕ</a>
+                  <button class="book_button_hotel">ЗАБРОНИРОВАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              <ul class="stars-list">
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+              </ul>
+              <div class="rating"><p>Рейтинг: 9,2</p></div>
+            </div>
+          </div>
+
+          <div class="hotel hotel__2">
+            <div class="hotel-info">
+              <div class="image">
+                <img src="../media/hotel__2.png" alt="" />
+              </div>
+              <div class="content-hotel">
+                <h2>Amara Resort & Spa</h2>
+                <div class="price">
+                  <p>Гостиница</p>
+                  <p>ОТ 4000 Р.</p>
+                </div>
+                <div class="more_buttons">
+                  <a href="#" class="button-more__info">ПОДРОБНЕЕ</a>
+                  <button class="book_button_hotel">ЗАБРОНИРОВАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              <ul class="stars-list">
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+              </ul>
+              <div class="rating"><p>Рейтинг: 9,2</p></div>
+            </div>
+          </div>
+
+          <div class="hotel hotel__3">
+            <div class="hotel-info">
+              <div class="image">
+                <img src="../media/hotel__3.png" alt="" />
+              </div>
+              <div class="content-hotel">
+                <h2>Amara Resort & Spa</h2>
+
+                <div class="price">
+                  <p>Гостиница</p>
+                  <p>ОТ 4000 Р.</p>
+                </div>
+                <div class="more_buttons">
+                  <a href="#" class="button-more__info">ПОДРОБНЕЕ</a>
+                  <button class="book_button_hotel">ЗАБРОНИРОВАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="stars">
+              <ul class="stars-list">
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+                <li>
+                  <img src="../media/star.png" alt="" />
+                </li>
+              </ul>
+              <div class="rating"><p>Рейтинг: 9,2</p></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="footer-content">
+          <div class="link">
+            <a href="#"><h1>#visitSEDONA</h1></a>
+          </div>
+
+          <div class="social">
+            <ul class="social-list">
+              <li class="social_item">
+                <a href="#">
+                  <img class="social-icon" src="../media/t.png" alt=""
+                /></a>
+              </li>
+              <li class="social_item social_item_fb">
+                <a href="#"
+                  ><img class="social-icon" src="../media/fb-icon.png" alt=""
+                /></a>
+              </li>
+              <li class="social_item">
+                <a href="#"
+                  ><img class="social-icon" src="../media/youtube.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dev_company">
+            <h4>WEBSITE by</h4>
+            <a href="#">
+              <img
+                class="dev_img"
+                src="../media/logo_name.jpg"
+                alt="dev_comp_logo"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/hotels.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/range-slider.js"></script>
+  </body>
+</html>
